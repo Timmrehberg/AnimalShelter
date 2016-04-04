@@ -22,23 +22,24 @@ namespace Animalshelter
         }
         public void Checkcatvaccine()
         {
-            if (gotshots == false)
+            if (gotshots == true)
             {
-                Console.WriteLine("Your animal is not updated with his shots would you like to vaccinate for an additional 45.00- Yes or No");
-                string vaccinateornot = Console.ReadLine();
-                if (vaccinateornot.Equals("Yes"))
+                Console.WriteLine("Your cat is all vaccinated and ready to go your price for this animal is " + price);
+                string takehomeanimal = Console.ReadLine();
+            }
+                if (gotshots == false)
                 {
-                    Console.WriteLine("Ok final price is " + (price + 45));
-                    Console.WriteLine();
-                }
-                else if (vaccinateornot.Equals("No"))
-                {
-                    Console.WriteLine("Ok final price is " + price);
-                }
-                else if(gotshots == true)
-                {
-                    Console.WriteLine("Your animal is all vaccinated and ready to go your final price is " + price);
-                    string takehomeanimal = Console.ReadLine();
+                    Console.WriteLine("Your cat is not updated with his shots would you like to vaccinate for an additional 45.00- Yes or No");
+                    string vaccinateornot = Console.ReadLine();
+                    if (vaccinateornot.Equals("Yes"))
+                    {
+                        Console.WriteLine("Ok price for this animal is " + (price + 45));
+                        Console.WriteLine();
+                    }
+                    else if (vaccinateornot.Equals("No"))
+                    {
+                        Console.WriteLine("Ok price for this animal is " + price);
+                    }
                 }
                 }
             }
@@ -49,5 +50,5 @@ namespace Animalshelter
 
 
 
-    }
+    
 

@@ -36,8 +36,20 @@ namespace Animalshelter
                 {
                     cat.Checkcatvaccine();
                     Catcage.Remove(cat);
+                    Console.WriteLine("Would you like to adopt another animal?-Yes or No");
+                    string adoptmore = Console.ReadLine();
+                    if (adoptmore.Equals("Yes")){
+                        ListAllcats();
+                        Adoptcat();
+                        
+                    }
+                    else if (adoptmore.Equals("No"))
+                    {
+                        Console.WriteLine("Ok thanks");
+                    }
                    
                     break;
+                    
                 }
             }
         }

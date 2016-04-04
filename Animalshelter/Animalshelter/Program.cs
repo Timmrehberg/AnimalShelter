@@ -14,11 +14,8 @@ namespace Animalshelter
 
             shelter.Whatanimals();
             shelter.cages.Adoptcat();
+
             
-            shelter.cages.ListAllcats();
-            shelter.cages.Adoptcat();
-            Console.Clear();
-            shelter.cages.ListAllcats();
 
 
 
