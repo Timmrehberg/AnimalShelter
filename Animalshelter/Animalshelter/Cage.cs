@@ -20,10 +20,10 @@ namespace Animalshelter
         Cat Benjie = new Cat(7, 20, "Benjie", "Sphynx cat", 45.00, true, "Female");
 
         Dog Leo = new Dog(6, 53, "Leo", "Bulldog", 75, true, "Male");
-        Dog Thomas = new Dog(3, 70, "Tommy boy", "German Shepard", 100.00, true, "Female");
+        Dog Thomas = new Dog(3, 73, "Tommy boy", "German Shepard", 100.00, true, "Female");
         Dog Jake = new Dog(2, 45, "Jake", "Siberian Husky", 95.00, false, "Female");
-        Dog Larry = new Dog(7, 22, "Larry", "Beagle", 50.00, true, "Male");
-        Dog Ace = new Dog(1, 70, "Ace", "Golden Retriever", 75.00, false, "Female");
+        Dog Larry = new Dog(7, 30, "Larry", "Beagle", 50.00, true, "Male");
+        Dog Ace = new Dog(1, 75, "Ace", "Golden Retriever", 75.00, false, "Female");
         public void addcatstocage()
         {
             Addcats(Jingles);
@@ -58,7 +58,7 @@ namespace Animalshelter
             cagenumber = 1;
             foreach (Cat cats in Catcage)
             {
-                Console.WriteLine(cats.name + " Is in cage " + cagenumber++ + " age is " + cats.age + " weight is " + cats.weight + " breed is " + cats.breed + " price is " + cats.price + " is a " + cats.maleorfemale + " got shots T/F- " + cats.gotshots);
+                Console.WriteLine(cats.name + " Is in cage " + cagenumber++ + " age is " + cats.age + " weight is " + cats.weight + " breed is " + cats.breed + " price is " + cats.price + " is a " + cats.maleorfemale + " got shots T/F- " + cats.gotshots + " this cat needs " + cats.Dailyservings + " daily servings of food");
 
             }
         }
@@ -75,7 +75,7 @@ namespace Animalshelter
             int cagecount = 1;
             foreach (Dog doggy in Dogcage)
             {
-                Console.WriteLine(doggy.name + " Is in cage " + cagecount++ + " age is " + doggy.age + " weight is " + doggy.weight + " breed is " + doggy.breed + " price is " + doggy.price + " is a " + doggy.maleorfemale + " got shots T/F- " + doggy.gotshots);
+                Console.WriteLine(doggy.name + " Is in cage " + cagecount++ + " age is " + doggy.age + " weight is " + doggy.weight + " breed is " + doggy.breed + " price is " + doggy.price + " is a " + doggy.maleorfemale + " got shots T/F- " + doggy.gotshots + " and this dog needs " + doggy.Dailyservings + " daily servings of food");
             }
         }
         public void RemoveCatandcheck()

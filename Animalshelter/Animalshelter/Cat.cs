@@ -8,6 +8,7 @@ namespace Animalshelter
 {
     public class Cat : Animals
     {
+        
       
 
         public Cat(int Age, double Weight, string Name, string Breed, double Price, bool gotShots,string MaleOrFemale)
@@ -19,6 +20,24 @@ namespace Animalshelter
             price = Price;
             gotshots = gotShots;
             maleorfemale = MaleOrFemale;
+            Dailyservings = 1;
+            
+            if(weight < 10)
+            {
+                Dailyservings = 1;
+            }
+            else if (weight > 10)
+            {
+                Dailyservings += 2;
+            }
+            else if(weight > 20)
+            {
+                Dailyservings += 3;
+            }
+            else if (weight > 30)
+            {
+                Dailyservings += 4;
+            }
         }
         public void Checkcatvaccine()
         {

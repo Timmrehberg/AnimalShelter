@@ -19,10 +19,28 @@ namespace Animalshelter
             price = Price;
             gotshots = gotShots;
             maleorfemale = MaleOrFemale;
-                 
-            
-            
+            Dailyservings = 1;
+            if (weight < 10)
+            {
+                Dailyservings = 2;
+            }
+            else if (weight > 30)
+            {
+                Dailyservings += 2;
+            }
+            else if (weight > 60)
+            {
+                Dailyservings += 3;
+            }
+            else if (weight > 70)
+            {
+                Dailyservings += 4;
+            }
         }
+
+
+
+    
         public void Checkshots()
         {
             if (gotshots == true)
