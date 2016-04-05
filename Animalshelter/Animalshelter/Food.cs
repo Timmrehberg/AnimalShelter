@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animalshelter
 {
-    interface IAddtocage
+    class Food
     {
-   
-        
     }
 }

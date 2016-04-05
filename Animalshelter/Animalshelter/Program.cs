@@ -11,13 +11,13 @@ namespace Animalshelter
         static void Main(string[] args)
         {
             Shelter shelter = new Shelter();
-
-            shelter.Whatanimals();
-            shelter.cages.Adoptcat();
-            shelter.cages.Adoptdog();
-           
-
+            shelter.Adoptanimal();
             
+
+
+
+
+
 
 
 

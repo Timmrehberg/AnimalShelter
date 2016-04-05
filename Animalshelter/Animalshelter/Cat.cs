@@ -25,7 +25,6 @@ namespace Animalshelter
             if (gotshots == true)
             {
                 Console.WriteLine("Your cat is all vaccinated and ready to go your price for this animal is " + price);
-                string takehomeanimal = Console.ReadLine();
             }
                 if (gotshots == false)
                 {

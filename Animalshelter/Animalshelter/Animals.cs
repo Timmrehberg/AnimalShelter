@@ -15,5 +15,7 @@ namespace Animalshelter
         public double price;
         public bool gotshots;
         public string maleorfemale;
+        //public string Foodtype;
+        //public int eat;
     }
 }
