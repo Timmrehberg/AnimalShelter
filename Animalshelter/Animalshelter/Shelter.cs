@@ -9,11 +9,11 @@ namespace Animalshelter
     public class Shelter
     {
         public Cage cages = new Cage();
-        Cat Jingles = new Cat(1, 5, "Jingles", "Siamese", 50.00, false,"Male");
-        Cat James = new Cat(3, 15, "James", "Bengal", 99.00, true,"Male");
-        Cat Fuzzy = new Cat(2, 10, "Fuzzy", "Persian", 30.00, false,"Female");
-        Cat Hughey = new Cat(6, 35, "Hughey", "Maine Coon", 65, true,"Male");
-        Cat Benjie = new Cat(7, 20, "Benjie", "Sphynx cat", 45.00, true,"Female");
+        Cat Jingles = new Cat(1, 5, "Jingles", "Siamese", 50.00, false, "Male");
+        Cat James = new Cat(3, 15, "James", "Bengal", 99.00, true, "Male");
+        Cat Fuzzy = new Cat(2, 10, "Fuzzy", "Persian", 30.00, false, "Female");
+        Cat Hughey = new Cat(6, 35, "Hughey", "Maine Coon", 65, true, "Male");
+        Cat Benjie = new Cat(7, 20, "Benjie", "Sphynx cat", 45.00, true, "Female");
 
         Dog Leo = new Dog(6, 53, "Leo", "Bulldog", 75, true, "Male");
         Dog Thomas = new Dog(3, 70, "Tommy boy", "German Shepard", 100.00, true, "Female");
@@ -22,7 +22,7 @@ namespace Animalshelter
         Dog Ace = new Dog(1, 70, "Ace", "Golden Retriever", 75.00, false, "Female");
 
 
-        
+
         public void addcatstocage()
         {
             Console.WriteLine("The cats available for adoption are- ");
@@ -61,10 +61,14 @@ namespace Animalshelter
                 adddogtocage();
             }
         }
-       
+ 
+
 
 
     }
+}
 
-    }
+
+    
+
 

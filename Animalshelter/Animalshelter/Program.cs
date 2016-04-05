@@ -14,6 +14,8 @@ namespace Animalshelter
 
             shelter.Whatanimals();
             shelter.cages.Adoptcat();
+            shelter.cages.Adoptdog();
+           
 
             
 

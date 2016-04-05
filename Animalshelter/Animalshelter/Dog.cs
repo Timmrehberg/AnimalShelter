@@ -23,5 +23,23 @@ namespace Animalshelter
             
             
         }
+        public void Checkshots()
+        {
+            if (gotshots == true)
+            {
+                Console.WriteLine("Your animal " + name + " is ready to go home! Final price is " + price);
+            }else if (gotshots == false)
+            {
+                Console.WriteLine("Your animal is not updated with his shots would you like to get them here for an additional 45-Yes or No");
+                string vaccinedog = Console.ReadLine();
+                if (vaccinedog.Equals("Yes"))
+                {
+                    Console.WriteLine("Ok your final price now is " + (price + 45));
+                } else
+                {
+                    Console.WriteLine("Ok your final price is " + price);
+                }
+            }
+        }
     }
 }

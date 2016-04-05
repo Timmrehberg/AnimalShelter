@@ -8,7 +8,7 @@ namespace Animalshelter
 {
     public class Cat : Animals
     {
-       public List<Cat> Allcats = new List<Cat>();
+      
 
         public Cat(int Age, double Weight, string Name, string Breed, double Price, bool gotShots,string MaleOrFemale)
         {

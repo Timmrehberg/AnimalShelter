@@ -49,6 +49,7 @@
     <Compile Include="Cage.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Dog.cs" />
+    <Compile Include="Donatedcats.cs" />
     <Compile Include="IAddtocage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
