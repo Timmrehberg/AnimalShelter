@@ -11,7 +11,10 @@ namespace Animalshelter
         static void Main(string[] args)
         {
             Shelter shelter = new Shelter();
+            Application App = new Application();
+            App.applicationtest();
             shelter.Adoptanimal();
+
             
 
 
